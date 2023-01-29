@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 </head>
 
-<body>
+<body class="mini-sidebar">
 
     <div id="app">
         @yield('content')
@@ -29,16 +29,14 @@
 
     <script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>
 
+    <script src="{{asset('assets/js/jquery.slimscroll.js')}}"></script>
+
     <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
-
-    <script src="{{asset('assets/plugins/apexchart/apexcharts.min.js')}}"></script>
-    <script src="{{asset('assets/plugins/apexchart/chart-data.js')}}"></script>
-
-    <script src="{{asset('assets/js/index.global.js')}}"></script>
-
-
-    <script src="{{asset('assets/js/script.js')}}"></script>
     @vite('resources/ts/app.ts')
+    <script src="{{asset('assets/js/script.js')}}"></script>
+
+    {{-- <script src="{{asset('assets/js/script.js')}}"></script> --}}
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <template >
-    <div class="main-wrapper">
+    <div>
+    <div class="main-wrapper ">
         <div class="header header-two">
            <div class="header-left">
               <a href="dashboard.html" class="logo-one">
@@ -7,7 +8,7 @@
               </a>
            </div>
            <a id="chat_toggle_btn" href="javascript:void(0);"><img src="assets/img/icon/bar-icon.svg" alt=""></a>
-           <a id="mobile_btn_chat" class="mobile_btn_chat float-start" href="#sidebar"><img src="assets/img/icon/bar-icon.svg" alt=""></a>
+           <a id="mobile_btn_chat" class="mobile_btn_chat float-start" role="button" ><img src="assets/img/icon/bar-icon.svg" alt=""></a>
            <div class="chat-menus chat-top-menu">
               <ul class="nav">
                  <li>
@@ -162,112 +163,116 @@
            </div>
         </div>
         <div class="sidebar" id="sidebar">
-           <div class="sidebar-inner slimscroll">
-              <div id="sidebar-menu-one" class="sidebar-menu-one">
-                 <ul>
-                    <li class="chats-add">
-                       <h4>Chats<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-contact"><i class="feather-plus"></i></a></h4>
-                    </li>
-                    <li>
-                       <div class="side-nav-search">
-                          <form>
-                             <input type="text" class="form-control" placeholder="Search here">
-                             <a class="btn"><i class="feather-search"></i></a>
-                          </form>
-                       </div>
-                    </li>
-                    <li>
-                       <div class="chat-user-actives">
-                          <a href="chats.html" class="d-flex align-items-center">
-                             <div class="chat-call-user">
-                                <img src="assets/img/profiles/avatar-02.jpg" alt="img">
-                                <span class="active-users bg-green"></span>
-                             </div>
-                             <div class="chat-users-recent">
-                                <div class="recent-user-titles d-flex">
-                                   <h5>Dickerson</h5>
+           <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 492px;">
+              <div class="sidebar-inner slimscroll" style="overflow: hidden; width: 100%; height: 492px;">
+                 <div id="sidebar-menu-one" class="sidebar-menu-one">
+                    <ul>
+                       <li class="chats-add">
+                          <h4>Chats<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-contact"><i class="feather-plus"></i></a></h4>
+                       </li>
+                       <li>
+                          <div class="side-nav-search">
+                             <form>
+                                <input type="text" class="form-control" placeholder="Search here">
+                                <a class="btn"><i class="feather-search"></i></a>
+                             </form>
+                          </div>
+                       </li>
+                       <li>
+                          <div class="chat-user-actives">
+                             <a href="chats.html" class="d-flex align-items-center">
+                                <div class="chat-call-user">
+                                   <img src="assets/img/profiles/avatar-02.jpg" alt="img">
+                                   <span class="active-users bg-green"></span>
                                 </div>
-                                <div class="recent-user-text d-flex">
-                                   <p>It seems logical that the</p>
+                                <div class="chat-users-recent">
+                                   <div class="recent-user-titles d-flex">
+                                      <h5>Dickerson</h5>
+                                   </div>
+                                   <div class="recent-user-text d-flex">
+                                      <p>It seems logical that the</p>
+                                   </div>
                                 </div>
-                             </div>
-                          </a>
-                       </div>
-                    </li>
-                    <li>
-                       <div class="chat-user-actives">
-                          <a href="chats.html" class="d-flex align-items-center">
-                             <div class="chat-call-user">
-                                <img src="assets/img/profiles/avatar-04.jpg" alt="img">
-                                <span class="active-users bg-green"></span>
-                             </div>
-                             <div class="chat-users-recent">
-                                <div class="recent-user-titles d-flex">
-                                   <h5>Forest Kroch</h5>
+                             </a>
+                          </div>
+                       </li>
+                       <li>
+                          <div class="chat-user-actives">
+                             <a href="chats.html" class="d-flex align-items-center">
+                                <div class="chat-call-user">
+                                   <img src="assets/img/profiles/avatar-04.jpg" alt="img">
+                                   <span class="active-users bg-green"></span>
                                 </div>
-                                <div class="recent-user-text d-flex">
-                                   <p>It seems logical that the</p>
+                                <div class="chat-users-recent">
+                                   <div class="recent-user-titles d-flex">
+                                      <h5>Forest Kroch</h5>
+                                   </div>
+                                   <div class="recent-user-text d-flex">
+                                      <p>It seems logical that the</p>
+                                   </div>
                                 </div>
-                             </div>
-                          </a>
-                       </div>
-                    </li>
-                    <li>
-                       <div class="chat-user-actives">
-                          <a href="chats.html" class="d-flex align-items-center">
-                             <div class="chat-call-user">
-                                <img src="assets/img/profiles/avatar-05.jpg" alt="img">
-                                <span class="active-users bg-green"></span>
-                             </div>
-                             <div class="chat-users-recent">
-                                <div class="recent-user-titles d-flex">
-                                   <h5>Townsend Seary</h5>
+                             </a>
+                          </div>
+                       </li>
+                       <li>
+                          <div class="chat-user-actives">
+                             <a href="chats.html" class="d-flex align-items-center">
+                                <div class="chat-call-user">
+                                   <img src="assets/img/profiles/avatar-05.jpg" alt="img">
+                                   <span class="active-users bg-green"></span>
                                 </div>
-                                <div class="recent-user-text d-flex">
-                                   <p>It seems logical that the</p>
+                                <div class="chat-users-recent">
+                                   <div class="recent-user-titles d-flex">
+                                      <h5>Townsend Seary</h5>
+                                   </div>
+                                   <div class="recent-user-text d-flex">
+                                      <p>It seems logical that the</p>
+                                   </div>
                                 </div>
-                             </div>
-                          </a>
-                       </div>
-                    </li>
-                    <li>
-                       <div class="chat-user-actives">
-                          <a href="chats.html" class="d-flex align-items-center">
-                             <div class="chat-call-user">
-                                <img src="assets/img/profiles/avatar-06.jpg" alt="img">
-                                <span class="active-users bg-green"></span>
-                             </div>
-                             <div class="chat-users-recent">
-                                <div class="recent-user-titles d-flex">
-                                   <h5>Margaretta Worvell</h5>
+                             </a>
+                          </div>
+                       </li>
+                       <li>
+                          <div class="chat-user-actives">
+                             <a href="chats.html" class="d-flex align-items-center">
+                                <div class="chat-call-user">
+                                   <img src="assets/img/profiles/avatar-06.jpg" alt="img">
+                                   <span class="active-users bg-green"></span>
                                 </div>
-                                <div class="recent-user-text d-flex">
-                                   <p>It seems logical that the</p>
+                                <div class="chat-users-recent">
+                                   <div class="recent-user-titles d-flex">
+                                      <h5>Margaretta Worvell</h5>
+                                   </div>
+                                   <div class="recent-user-text d-flex">
+                                      <p>It seems logical that the</p>
+                                   </div>
                                 </div>
-                             </div>
-                          </a>
-                       </div>
-                    </li>
-                    <li>
-                       <div class="chat-user-actives">
-                          <a href="chats.html" class="d-flex align-items-center">
-                             <div class="chat-call-user">
-                                <img src="assets/img/profiles/avatar-08.jpg" alt="img">
-                                <span class="active-users bg-green"></span>
-                             </div>
-                             <div class="chat-users-recent">
-                                <div class="recent-user-titles d-flex">
-                                   <h5>Harald Kowalski</h5>
+                             </a>
+                          </div>
+                       </li>
+                       <li>
+                          <div class="chat-user-actives">
+                             <a href="chats.html" class="d-flex align-items-center">
+                                <div class="chat-call-user">
+                                   <img src="assets/img/profiles/avatar-08.jpg" alt="img">
+                                   <span class="active-users bg-green"></span>
                                 </div>
-                                <div class="recent-user-text d-flex">
-                                   <p>It seems logical that the</p>
+                                <div class="chat-users-recent">
+                                   <div class="recent-user-titles d-flex">
+                                      <h5>Harald Kowalski</h5>
+                                   </div>
+                                   <div class="recent-user-text d-flex">
+                                      <p>It seems logical that the</p>
+                                   </div>
                                 </div>
-                             </div>
-                          </a>
-                       </div>
-                    </li>
-                 </ul>
+                             </a>
+                          </div>
+                       </li>
+                    </ul>
+                 </div>
               </div>
+              <div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 476.504px;"></div>
+              <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
            </div>
         </div>
         <div class="page-wrapper-chat">
@@ -352,10 +357,13 @@
            </div>
         </div>
      </div>
+    </div>
 </template>
-<script>
+<script >
 export default {
+        mounted(){
 
+        }
 }
 </script>
 <style lang="">
